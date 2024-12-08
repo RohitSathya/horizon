@@ -20,7 +20,7 @@ const GoogleButton = () => {
       localStorage.setItem('googleUser', JSON.stringify(userDetails));
 
       toast.success(`Welcome, ${user.displayName}!`);
-      navigate('/post')
+      navigate('/dashboard')
     } catch (error) {
       toast.error('Failed to sign in with Google');
       console.error('Google sign-in error:', error);

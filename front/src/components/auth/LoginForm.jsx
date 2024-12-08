@@ -31,7 +31,7 @@ const LoginForm = () => {
       };
       localStorage.setItem("normalUser", JSON.stringify(userDetails)); // Store user details
       toast.success("Login successful!");
-      navigate('/post')
+      navigate('/dashboard')
     } catch (error) {
       toast.error(error.response?.data?.message || "Login failed");
     }
